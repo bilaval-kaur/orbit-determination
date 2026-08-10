@@ -1,0 +1,8 @@
+pyproject.toml
+src/orbitdet/__init__.py
+src/orbitdet.egg-info/PKG-INFO
+src/orbitdet.egg-info/SOURCES.txt
+src/orbitdet.egg-info/dependency_links.txt
+src/orbitdet.egg-info/top_level.txt
+src/orbitdet/scenarios/__init__.py
+src/orbitdet/scenarios/config.py

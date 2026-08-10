@@ -1,0 +1,21 @@
+# Nominal circular LEO scenario - used as the M1 validation case.
+#
+# Initial state: a circular orbit at 400 km altitude (ISS-like), in the
+# equatorial plane, with position along the ECI x-axis and velocity purely
+# in the ECI y-direction. Chosen because a circular orbit has a trivial,
+# known analytical check: specific orbital energy and angular momentum
+# must stay exactly constant, and the orbital period is known in closed
+# form (2*pi*sqrt(r^3/mu)) - see docs/conventions.md.
+
+name: "nominal_circular_leo"
+seed: 42
+
+epoch_utc: "2026-01-01T00:00:00+00:00"
+
+mu_km3_s2: 398600.4418
+
+initial_position_km: [6778.137, 0.0, 0.0]
+initial_velocity_km_s: [0.0, 7.6685582, 0.0]
+
+propagation_duration_s: 18000.0
+integrator_step_s: 10.0
