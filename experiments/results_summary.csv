@@ -1,0 +1,8 @@
+experiment,mean_pos_error_km,nees_mean,nees_consistent,nis_mean,nis_consistent,anomaly_detected,detection_latency_steps,maneuver_dv_km_s,post_maneuver_error_km
+1_low_measurement_noise,0.0439,6.27,True,2.9,True,False,,,
+2_high_measurement_noise,0.7599,11.75,False,2.91,True,False,,,
+3_low_process_noise,0.195,12.29,False,2.92,True,False,,,
+4_large_initial_state_error,0.2105,9.29,False,2.93,True,False,,,
+5_unexpected_perturbation,16.5559,751948.43,False,2580.72,False,True,3.0,,
+6_perturbation_with_correction,16.5559,751948.43,False,2580.72,False,True,3.0,0.00426,0.5
+7_tighter_correction_tolerance,16.5559,751948.43,False,2580.72,False,True,3.0,0.00461,0.05
