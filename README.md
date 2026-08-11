@@ -25,7 +25,7 @@ assumed from a library.
 
 ## Motivation
 
-I am a Chemical Engineering graduate pursuing graduate study in Aerospace
+I am a Chemical Engineering graduate wanting to pursue graduate study in Aerospace
 Engineering, Systems Engineering, and Operations Research. This project
 exists to demonstrate that transition is deliberate and technically
 grounded -- not a claim, a working artifact. It deliberately differs from
@@ -33,7 +33,7 @@ my other satellite project,
 [Mission Control](https://github.com/bilaval-kaur/mission-control): that
 project demonstrates full-stack systems engineering built on a trusted,
 industry-standard propagator (SGP4/Skyfield). This project derives the
-dynamics, the filter, and the optimization myself -- almost nothing here is
+dynamics, the filter, and the optimization myself, almost nothing here is
 blackboxed except the ODE solver's internal step-control and the
 optimizer's internal search algorithm, both of which I supply the model,
 Jacobian, and constraints for.
@@ -51,7 +51,7 @@ Jacobian, and constraints for.
   derived state transition Jacobian, cross-validated against finite
   differences
 - **Formal filter consistency validation** (NEES/NIS, chi-squared
-  hypothesis testing) -- not just "does the estimate look accurate," but
+  hypothesis testing) not just "does the estimate look accurate," but
   "is the filter's uncertainty honest"
 - **Statistical anomaly detection** via single-sample NIS hypothesis
   testing with M-of-N persistence logic, catching a real injected
@@ -107,10 +107,10 @@ Matplotlib, Pydantic (config schema validation), PyYAML, pytest, Git.
 
 ## Mathematics
 
-Every derivation used in this project -- the two-body equation of motion,
+Every derivation used in this project: the two-body equation of motion,
 conserved-quantity proofs, the EKF's Jacobian derivation, the chi-squared
 consistency theory, the RTN maneuver efficiency proof, and the constrained
-optimization formulation -- is documented in full in
+optimization formulation, is documented in full in
 [`docs/mathematics.md`](docs/mathematics.md).
 
 ## Data Honesty
@@ -248,8 +248,8 @@ through real debugging rather than assumed correct:
 
 ## What I Learned
 
-This project required genuinely deriving -- not just calling library
-functions for -- orbital dynamics, coordinate transformations, Kalman
+This project required genuinely deriving, not just calling library
+functions for orbital dynamics, coordinate transformations, Kalman
 filter theory, chi-squared consistency testing, and constrained
 optimization. It also required real engineering judgment: correcting a
 flawed objective function proposal before writing any code, catching
